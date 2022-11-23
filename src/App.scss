@@ -1,0 +1,7 @@
+@use '../src/Styles/Abstract/colors';
+
+.App{
+  background-color: colors.$bg_color;
+  height: 100vh;
+
+}

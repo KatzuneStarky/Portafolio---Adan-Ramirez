@@ -1,0 +1,45 @@
+@use '../Abstract/colors';
+
+.menu{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #181d38;
+  position: sticky;
+  .logo{
+    width: 100px;
+    margin-left: 30px;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    li{
+      margin-right: 20px;
+      a{
+        color: colors.$text;
+        text-decoration: none;
+      }
+    }
+  }
+  .resumeBtn{
+    display: block;
+    margin-right: 50px;
+    margin-left: 30px;
+    background-color: colors.$button;
+    color: colors.$button_text;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-align: center;
+    border: 3px solid colors.$stroke;
+    transition: all .3s;
+    &:hover{
+      color: colors.$button;
+      background-color: colors.$button_text;
+      border-color: colors.$button;
+    }
+  }
+}
