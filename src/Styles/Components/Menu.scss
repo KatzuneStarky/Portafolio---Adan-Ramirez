@@ -22,17 +22,23 @@
       a{
         color: colors.$text;
         text-decoration: none;
+        transition: all .3s;
+        &:hover{
+          color: white;
+        }
       }
     }
   }
   .resumeBtn{
-    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     margin-right: 50px;
     margin-left: 30px;
     background-color: colors.$button;
     color: colors.$button_text;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 10px 30px;
     text-align: center;
     border: 3px solid colors.$stroke;
     transition: all .3s;

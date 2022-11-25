@@ -13,10 +13,14 @@ const PdfVisualizer = () => {
 
   return (
     <>
-      <Document file={pdf} onLoadSuccess={onDocumentLoadSucces}>
-        <Page height={600} pageNumber={pageNumber} />
-      </Document>
-      <p>Pagina {pageNumber} de {numPage} </p>
+      <div className="container">
+        <Document file={pdf} onLoadSuccess={onDocumentLoadSucces}>
+          <Page height={600} pageNumber={pageNumber} />
+        </Document>
+        <p>
+          Pagina {pageNumber} de {numPage}{" "}
+        </p>
+      </div>
     </>
   );
 };
